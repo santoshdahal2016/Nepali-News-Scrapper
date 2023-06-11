@@ -8,9 +8,7 @@ The Nepali News Scrapper is a Python-based repository that provides a web scrapi
 
 2. **Article Extraction**: The repository includes powerful web scraping techniques to extract article content, including the title, author, published date, and main body text. The extraction process is designed to handle different page layouts and ensures accurate retrieval of news article information.
 
-3. **Data Storage**: The scraped news articles can be stored in various formats, such as CSV, JSON, or a database. The repository provides utility functions and examples to assist users in efficiently storing the extracted data according to their specific requirements.
-
-4. **Customization**: The Nepali News Scrapper is highly customizable and allows users to modify the scraping scripts to fit the specific layout and structure of other Nepali news websites. The repository provides clear documentation and guidelines for users to easily extend the scraping capabilities to additional sources.
+3. **Public API**: The scraped news articles can be accesed through api for provided dates.
 
 5. **Ease of Use**: The repository is designed to be user-friendly, even for individuals with limited programming experience. It includes detailed documentation and examples to guide users through the setup process and demonstrate the usage of various scraping functionalities.
 
@@ -23,3 +21,23 @@ To get started with the Nepali News Scrapper, users can simply clone the reposit
 With the Nepali News Scrapper repository, developers and data enthusiasts can easily collect and extract news articles from popular Nepali news websites. Whether for research, analysis, or creating a news aggregation platform, this repository provides a reliable and flexible solution for gathering news data in the Nepali language.
 
 **Note:** It is essential to review and respect the terms of service and legal considerations of the targeted websites when using web scraping tools.
+
+
+## Workplan 
+
+List of Tasks 
+
+1. Scrape news from online news portal 
+2. Store them in database 
+3. Run the process in background 
+4. Watch news portal for any changes , if detected scrape only changes  and store 
+5. These news must be accessible through api according to date provided 
+
+Tech Stack :
+
+1. Scrapping : Scrapy
+2. Database : Postgres 
+3. Background Jobs : Celery 
+4. API Framework : DRF (Django)
+
+Scrapy :
