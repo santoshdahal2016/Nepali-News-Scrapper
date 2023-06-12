@@ -66,3 +66,12 @@ Development
 2. Test
 
 
+
+```
+
+Django Server : python manage.py runserver
+Celery Worker : celery -A config beat -l info
+Celery Beat : celery -A config beat -l info
+
+```
+
