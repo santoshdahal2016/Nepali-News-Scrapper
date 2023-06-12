@@ -163,3 +163,8 @@ SIMPLE_JWT = {
     'ROTATE_REFRESH_TOKENS': False,
     'BLACKLIST_AFTER_ROTATION': False,
 }
+
+
+# Celery settings
+CELERY_BROKER_URL = "redis://"+env('REDIS_HOST')+":6379"
+CELERY_RESULT_BACKEND = "redis://"+env('REDIS_HOST')+":6379"
