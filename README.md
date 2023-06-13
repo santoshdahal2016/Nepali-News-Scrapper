@@ -2,6 +2,10 @@
 
 The Nepali News Scrapper is a Python-based repository that provides a web scraping solution for extracting news articles from popular Nepali news websites. The repository offers a collection of scripts and utilities that allow users to scrape news articles, retrieve relevant information, and store the data in a structured format.
 
+
+![Design](./NewsScrapperArtitectureDesign.jpg)
+
+
 ### Key Features:
 
 1. **Website Support**: The Nepali News Scrapper supports scraping news articles from multiple popular Nepali news websites. It provides predefined scraping scripts for each supported website, enabling users to extract articles effortlessly.
