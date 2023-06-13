@@ -170,14 +170,20 @@ SIMPLE_JWT = {
 CELERY_BROKER_URL = "redis://"+env('REDIS_HOST')+":6379"
 CELERY_RESULT_BACKEND = "redis://"+env('REDIS_HOST')+":6379"
 
-CELERY_IMPORTS = ('app.tasks.sample_task')
+# CELERY_IMPORTS = ('app.tasks.sample_task')
+CELERY_IMPORTS = ('app.tasks.aggrigate_links_task')
 
 
 
 CELERY_BEAT_SCHEDULE = { # scheduler configuration 
-    'sample_task' : {  # whatever the name you want 
-        'task': 'app.tasks.sample_task', # name of task with path
-        'task': 'app.tasks.sample_task.sample_task', # name of task with path
+    # 'sample_task' : {  # whatever the name you want 
+    #     'task': 'app.tasks.sample_task', # name of task with path
+    #     'task': 'app.tasks.sample_task.sample_task', # name of task with path
+    #     'schedule': crontab(), # crontab() runs the tasks every minute
+    # },
+    'aggrigate_links_task' : {  # whatever the name you want 
+        'task': 'app.tasks.aggrigate_links_task', # name of task with path
+        'task': 'app.tasks.aggrigate_links_task.aggrigate_links_task', # name of task with path
         'schedule': crontab(), # crontab() runs the tasks every minute
     },
 }

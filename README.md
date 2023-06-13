@@ -35,14 +35,14 @@ List of Tasks
 
 Tech Stack :
 
-1. Scrapping : Scrapy
+1. Scrapping : selenium
 2. Database : Postgres 
 3. Background Jobs : Celery 
 4. API Framework : DRF (Django)
 
-Scrapy :
+selenium :
 
-Scrapy is python based framwork, which is widely used for scraping. It allows you to define data structures, write extractions, provide post and pre pipelines to perform actions on the request and response of a web-request. It also provides built-in xpath/css selectors to extract the desired data. It also gives you control over the speed and rate in which you want to make request to a certain site/domain so you follow the privacy rules.
+The Selenium Python package is a popular tool for automating web browsers. It provides a Python interface to interact with web browsers programmatically, allowing you to control and automate browser actions, such as clicking buttons, filling out forms, extracting data, and navigating through web pages.
 
 
 
