@@ -74,9 +74,12 @@ Celery Worker : celery -A config beat -l info
 Celery Beat : celery -A config beat -l info
 
 
-Selenium : 
+Selenium Dopcker : 
 
 docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" --env SE_NODE_MAX_INSTANCES=4 --env SE_NODE_MAX_SESSIONS=4  selenium/standalone-firefox:latest
+
+
+
 
 ```
 

@@ -2,8 +2,9 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-from environs import Env
 from django.conf import settings
+
+from environs import Env
 
 
 env = Env()
